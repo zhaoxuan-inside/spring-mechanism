@@ -2,8 +2,8 @@
 
 ## 如何编译Spring源码
 > [!note]+ 版本
-> Spring 6.0.2
-> Gradle 8.7
+> Spring 6.0.2  
+> Gradle 8.7  
 
 1. 修改`gradle/wrapper/gradle-wrapper.properties文件，可以替换Gradle为本地
    ```markdown
