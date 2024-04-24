@@ -9,7 +9,7 @@
    ```markdown
    原来的gradle地址被301重定向的，但是cmd或者gitbash不知道怎么处理，所以需要修改
    ```
-   #distributionUrl=https\://services.gradle.org/distributions/gradle-8.7-bin.zip
+   #distributionUrl=https\://services.gradle.org/distributions/gradle-8.7-bin.zip    
    distributionUrl=file:///your_gradle_base_path/gradle-8.7-bin.zip
 2. 有需要使用阿里云之类的仓库的话，修改`build.gradle`文件
   ```configure
