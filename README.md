@@ -61,9 +61,21 @@ pluginManagement{
 // 在脚本的第二行增加如下的内容，可以让脚本执行过程可视化
 set -x
 
-6. 使用gitbash执行预编译命令
+6. 确定使用的pom和kotlin版本是否存在
+```markdown
+本人在预编译过程中遇到的版本问题如下：
+1. kotlin版本找不到
+   RE：修改`gradle.properties`文件的`kotlinVersion=1.9.23`版本号，可用的版本通过`https://developer.aliyun.com/mvn/search`可以查到，根据可以用的版本，进行修改即可；
+2. micrometer-bom版本找不到
+   RE：修改`framework-platform.gradle`文件的`	api(platform("io.micrometer:micrometer-bom:1.12.5"))`的版本号即可；
+3. reactor-bom版本找不到
+   RE：修改`framework-platform.gradle`文件的`	api(platform("io.projectreactor:reactor-bom:2023.0.5"))`的版本号即可；
+```
+
+7. 使用gitbash执行预编译命令
 ```bash
 gradlew :spring-oxm:compileTestJava
 ```
-7. 开始等待；持续的等待；漫长的等待........
-   
+
+8. 开始等待；持续的等待；漫长的等待........
+
